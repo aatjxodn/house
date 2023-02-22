@@ -40,4 +40,5 @@
 + **문의 게시판**: 제품문의(PRODUCTINQUIRY), 제품문의댓글(PRODUCTINQUIRY_COM)
 + **리뷰 게시판**: 리뷰(REVIEWS)
 
-ddddddddddddddzasdasdasdzsda
+
+2022 하반기 프로젝트 > 2023 깃 아이디 교체
