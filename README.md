@@ -39,3 +39,5 @@
 + **주문/결제**: 주문상품(ORDER_PRODUCT), 주문/결제(ORDERS)
 + **문의 게시판**: 제품문의(PRODUCTINQUIRY), 제품문의댓글(PRODUCTINQUIRY_COM)
 + **리뷰 게시판**: 리뷰(REVIEWS)
+
+ddddddddddddddzasdasdasdzsda
