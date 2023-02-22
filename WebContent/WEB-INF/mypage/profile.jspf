@@ -1,0 +1,18 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<nav class="navbar navbar-expand-sm border-bottom justify-content-center" style="font-weight: bold;">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link category" id="picture" href="profile.do?id=${id}">사진</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link best" id="knowhow" href="myknowhow.do?id=${id}">노하우</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link discount" id="qa" href="myquestions.do?id=${id}">질문과답변</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link discount" id="collections" href="collections.do?id=${id}">스크랩북</a>
+    </li>
+  </ul>
+</nav>

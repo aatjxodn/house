@@ -1,0 +1,55 @@
+<%@page import="java.text.DecimalFormat"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+<!-- 세자리콤마 -->
+
+<style>
+.company {
+	font-size: 0.8em;
+}
+
+.p_name {
+	font-size: 0.9em;
+}
+
+.p_price {
+	font-size: 1.3em;
+	font-weight: bold;
+}
+</style>
+<div class="container mx-auto">
+	<div class="row mr-10">
+		<c:forEach var="vo" items="${list }">
+
+			<div class="col-xl-3 col-lg-4 col-md-6 mt-3 p-0">
+			<form name="frm" action="pdetail.do" method="post">
+				<div class="card" style="width: 17rem; height: 30rem;">
+					<img src="${vo.imagefile }" class="card-img-top" alt="...">
+					<div class="card-body">
+						<a href="pdetail.do?productNum=${vo.productNum}" class="stretched-link"> <!-- 회사이름 --> 
+							<a class="company" href="#">${vo.companyName }</a> <!-- 제품명 -->
+								<p class="p_name">${vo.productName}</p>
+									<c:if test="${vo.stock==0}">
+								<p class="p_price">
+									일시품절
+								</p>
+								</c:if>
+								<c:if test="${vo.stock != 0}">
+								<p class="p_price">
+									<fmt:formatNumber value="${vo.productPrice }" pattern="#,###" />
+								</p> 
+								</c:if>
+								<c:if test="${vo.shipping < vo.productPrice }">
+									<span class="badge badge-secondary">무료배송</span>
+								</c:if> 
+									<span class="badge badge-danger">최저가 도전</span>
+						</a>
+					</div>
+				</div>
+				</form>
+			</div>
+
+		</c:forEach>
+	</div>
+</div>

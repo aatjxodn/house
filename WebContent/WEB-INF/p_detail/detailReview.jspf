@@ -1,0 +1,82 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>${vo.productName }</title>
+<style>
+.star-ratings {
+  color: #aaa9a9; 
+  position: relative;
+  unicode-bidi: bidi-override;
+  width: max-content;
+  -webkit-text-fill-color: gray; /* Will override color (regardless of order) */
+  -webkit-text-stroke-color: gray;
+   top: -5%;
+	left: 50%;
+	transform: translate(-50%,0%)
+  
+}
+ 
+.star-ratings-fill {
+  color: #fff58c;
+  padding: 0;
+  position: absolute; 
+  z-index: 1;
+  display: flex;
+  overflow: hidden;
+  -webkit-text-fill-color: #35C5F0;
+}
+ 
+.star-ratings-base {
+  z-index: 0;
+  padding: 0;
+}
+
+table {
+	position: relative;
+}
+
+</style>
+
+</head>
+<body>
+<script>
+ratingToPercent() {
+    const score = 1 * 20;
+    return score + 1.5;
+}	
+</script>
+
+	
+	<table style="width: 100%; height:150px; text-align: center; background-color:#F6F6F6; border-radius: 10px;">
+	<tr>
+	<td style="width: 30%; font-size: 2em; font-weight: bold;">
+	1 / 5
+	</td>
+	<td>
+	<div class="star-ratings">
+	<div class="star-ratings-fill space-x-2 text-lg" style="width: 20%; font-size: 4em; text-align: center;">
+		<span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+	</div>
+	<div class="star-ratings-base space-x-2 text-lg" style="font-size: 4em; text-align:center;">
+		<span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+	</div>
+</div>
+	</td>
+	</tr>
+	</table>
+<hr>	
+<table style="width: 100%; margin: 0;">
+	<tr>
+		<td>리뷰~~</td>
+	</tr>
+</table>
+<hr>	
+
+
+
+
+</body>
+</html>

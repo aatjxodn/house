@@ -1,0 +1,15 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+
+<div class="card" style="width: 16rem; text-align: center;">
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">
+    <img alt="프로필사진" src="${pageContext.request.contextPath}/img/profileImg/${profileImg }" style="width: 80%; border-radius: 50%; aspect-ratio: 1/1;"> <!-- 등록사진으로 불러오기 -->
+    </li>
+    <li class="list-group-item">
+    <h5 class="card-title" style="padding: 20px; font-weight: bold;">${id }</h5>
+    <button type="button" class="btn btn-outline-secondary" onclick="location.href='infoEdit.do'">설정</button>
+    </li>
+  </ul>
+</div>

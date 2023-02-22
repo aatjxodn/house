@@ -1,0 +1,15 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<nav class="navbar navbar-expand-sm border-bottom justify-content-center" style="font-size: 1.1em; font-weight: bold;">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link home" id="mypage" href="profile.do?id=${id }">프로필</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link category" id="mysp" href="myshopping.do">나의 쇼핑</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link discount" id="myupdate" href="infoEdit.do">설정</a>
+    </li>
+  </ul>
+</nav>

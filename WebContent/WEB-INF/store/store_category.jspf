@@ -1,0 +1,47 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    
+    <style>
+    .company{
+    	font-size: 0.8em;
+    }
+    .pname {
+    	font-weight: bolder;
+    	color: gray;
+    }
+    .p_price{
+    	font-size: 1.3em;
+    	font-weight: bold;
+    }
+    
+    table{
+    	margin-left: auto;
+    	margin-right: auto;
+    	text-align: center;
+    	border-collapse: separate;
+ 		border-spacing: 10px;
+    }
+    
+  </style>
+    
+<div class="container">
+	<div class="table-responsive ">    
+	    <table class="table table-borderless">
+	    	<tr>
+				<td><a href="category.do?categoryNum=1" class="pname" ><img alt="가구" src="${pageContext.request.contextPath}/imgs/c001.jpg" width="70"><br><br>가구</a></td> <!-- 해당 카테고리로 이동 -->
+				<td><a href="category.do?categoryNum=2" class="pname"><img alt="패브릭" src="${pageContext.request.contextPath}/imgs/c002.jpg" width="70"><br><br>패브릭</a></td> <!-- 해당 카테고리로 이동 -->
+				<td><a href="category.do?categoryNum=3" class="pname"><img alt="주방용품" src="${pageContext.request.contextPath}/imgs/c003.jpg" width="70"><br><br>주방용품</a></td> <!-- 해당 카테고리로 이동 -->
+				<td><a href="category.do?categoryNum=4" class="pname"><img alt="데코·식물" src="${pageContext.request.contextPath}/imgs/c004.jpg" width="70"><br><br>데코·식물</a></td> <!-- 해당 카테고리로 이동 -->
+				<td><a href="category.do?categoryNum=5" class="pname"><img alt="조명" src="${pageContext.request.contextPath}/imgs/c005.jpg" width="70"><br><br>조명</a></td> <!-- 해당 카테고리로 이동 -->
+				<td><a href="category.do?categoryNum=6" class="pname"><img alt="수납·정리" src="${pageContext.request.contextPath}/imgs/c006.jpg" width="70"><br><br>수납·정리</a></td> <!-- 해당 카테고리로 이동 -->
+				<td><a href="category.do?categoryNum=7" class="pname"><img alt="생활용품" src="${pageContext.request.contextPath}/imgs/c007.jpg" width="70"><br><br>생활용품</a></td> <!-- 해당 카테고리로 이동 -->
+				<td><a href="category.do?categoryNum=8" class="pname"><img alt="반려동물" src="${pageContext.request.contextPath}/imgs/c008.jpg" width="70"><br><br>반려동물</a></td> <!-- 해당 카테고리로 이동 -->
+				<td><a href="category.do?categoryNum=9" class="pname"><img alt="캠핑용품" src="${pageContext.request.contextPath}/imgs/c009.jpg" width="70"><br><br>캠핑용품</a></td> <!-- 해당 카테고리로 이동 -->
+				<td><a href="category.do?categoryNum=10" class="pname"><img alt="유아·아동" src="${pageContext.request.contextPath}/imgs/c010.jpg" width="70"><br><br>유아·아동</a></td> <!-- 해당 카테고리로 이동 -->
+	    	</tr>
+	    </table>
+    </div>
+</div>   
+    
+    
+    
